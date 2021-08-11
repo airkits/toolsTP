@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "es2017",
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "bin",
@@ -9,6 +9,8 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": false
-      },
-   
+    },
+    "include": [
+        "src/**/*"
+    ],
 }
