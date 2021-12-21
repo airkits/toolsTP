@@ -1,6 +1,5 @@
 #!/usr/bin/env ts-node
 
-import clc = require('cli-color')
 
 import { getParams, isEmptyParams, Utils } from './utils/Utils'
 import { FileUtils } from './utils/FileUtils'
@@ -23,7 +22,7 @@ function doHelp(): void {
 }
 
 async function main() {
-    console.log(clc.green('Tool start [' + Utils.date() + '] \n') + clc.blue('Home:' + FileUtils.toolHome()))
+    console.log('Tool start [' + Utils.date() + '] \n' + 'Home:' + FileUtils.toolHome())
     const args = getParams()
     console.log(args)
     console.log('=============================')

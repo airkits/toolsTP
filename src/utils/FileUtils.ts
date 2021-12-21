@@ -2,12 +2,7 @@ import path = require('path')
 import fs = require('fs-extra')
 import JSZip = require('jszip')
 import marked = require('marked')
-import TerminalRenderer = require('marked-terminal')
-import clc = require('cli-color')
-marked.setOptions({
-    // Define custom renderer
-    renderer: new TerminalRenderer(),
-})
+
 /*
  * @Author: ankye
  * @since: 2021-08-11 12:39:38
@@ -81,7 +76,7 @@ export class FileUtils {
             let data = fs.readFileSync(file, 'utf8')
             return data
         } else {
-            console.error(clc.red('file not found ', file))
+            console.error('file not found ', file)
         }
         return null
     }
