@@ -1,6 +1,6 @@
 /* eslint-disable */
 module.exports = {
-    'plugins': ['simple-import-sort'],
+    'plugins': ['simple-import-sort','const-enum'],
     'rules': {
         // 检查函数是否有返回值：报错。 
         '@typescript-eslint/explicit-module-boundary-types': ['error'],

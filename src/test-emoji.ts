@@ -1,78 +1,7 @@
-/**计算从nTime1到nTime2过去了多少自然天天*/
-// function passedDays2(nTime1: number, nTime2: number): number {
-//     let t = new Date(nTime1)
-//     nTime1 = nTime1 - (t.getHours() * 3600 + t.getMinutes() * 60 + t.getSeconds())
-//     const offset = (nTime2 - nTime1) / 86400
-//     return Math.ceil(offset)
-// }
-
-// const now = Date.now()
-// const start = now - 36000
-// console.log(passedDays2(start, now))
 import { createCanvas } from 'canvas'
 
 const fontWidthCanvas = createCanvas(120, 120)
 const tempCXtx = fontWidthCanvas.getContext('2d')
-
-// function save() {
-//     const fs = require('fs')
-//     const out = fs.createWriteStream(__dirname + '/test.png')
-//     const stream = canvas.createPNGStream()
-//     stream.pipe(out)
-//     out.on('finish', () => console.log('The PNG file was created.'))
-// }
-// let a = getSymbolAt('w大熊🐻👨‍👩‍👧‍👦', 3)
-// console.log(a)
-// console.log(tempCXtx.measureText('👨‍👩‍👧‍👦'))
-// console.log(tempCXtx.measureText('🐻').width)
-
-// const canvas = createCanvas(1024, 1024)
-// const ctx = canvas.getContext('2d')
-
-// ctx.save()
-// // Write "!"
-// ctx.font = '30px Pingfang sc'
-// let text = '测试！'
-// ctx.strokeStyle = 'rgba(0,255,255,1.)'
-// ctx.fillStyle = `rgba(255,0,0,1.)`
-// ctx.lineWidth = 1
-// ctx.strokeText(text, 50, 100)
-// ctx.fillText(text, 50, 100)
-// ctx.restore()
-// ctx.save()
-// // Write "!"
-// ctx.font = '30px Pingfang sc'
-// ctx.strokeStyle = 'rgba(0,255,255,1.)'
-// ctx.fillStyle = `rgba(255,0,0,1.)`
-// ctx.lineWidth = 1
-
-// ctx.strokeText(text, 50, 150)
-// ctx.fillText(text, 50, 150)
-
-// ctx.restore()
-
-// ctx.save()
-// ctx.font = '32px Pingfang sc'
-// ctx.fillStyle = `rgba(255,0,0,1.)`
-
-// ctx.strokeStyle = 'rgba(0,255,0,1.)'
-// ctx.lineWidth = 1
-// ctx.strokeText(text, 200, 150)
-// ctx.fillText(text, 200, 100)
-// ctx.restore()
-
-// ctx.save()
-// ctx.font = '32px Pingfang sc'
-// ctx.fillStyle = `rgba(255,0,0,1.)`
-
-// ctx.strokeStyle = 'rgba(0,255,0,1.)'
-// ctx.lineWidth = 1
-// ctx.fillText(text, 350, 100)
-// ctx.strokeText(text, 350, 150)
-
-// ctx.restore()
-
-// save()
 
 export function getSymbolSafeSubstring(str: string, index: number, endIndex?): string {
     const length = str.length

@@ -1,7 +1,7 @@
-import path = require('path')
-import fs = require('fs-extra')
-import JSZip = require('jszip')
-import marked = require('marked')
+var path = require('path')
+var fs = require('fs-extra')
+var JSZip = require('jszip')
+var marked = require('marked')
 
 /*
  * @Author: ankye
@@ -131,6 +131,10 @@ export class FileUtils {
         })
     }
 
+    public static getFilePath(filename) {
+        let outPath = path.join(__dirname, filename)
+        return outPath
+    }
     public static saveZip(zip: JSZip, dist: string): void {
         // 压缩
         zip.generateAsync({

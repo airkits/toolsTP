@@ -9,7 +9,7 @@
         "type": "node", //调试类型
         "request": "launch", //请求方式
         "args": [
-            "${workspaceRoot}/src/main.ts" // 入口文件
+            "${workspaceRoot}/src/test.ts" // 入口文件
         ],
         "runtimeArgs": [
             "--nolazy",
